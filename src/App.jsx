@@ -45,7 +45,8 @@ function App() {
       );
   };
 
-  const copyToClipboard = () => {
+  const copyToClipboard = (e) => {
+    e.preventDefault()
     if (shortRef.current.value) {
       navigator.clipboard.writeText(shortRef.current.value);
     }
