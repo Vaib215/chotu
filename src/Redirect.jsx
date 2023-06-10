@@ -29,7 +29,7 @@ const Redirect = () => {
         location.href = url;
       });
   }, []);
-  return <div>Redirecting you to your destination...</div>;
+  return <div className="min-h-screen flex items-center justify-center text-2xl">Redirecting you to your destination...</div>;
 };
 
 export default Redirect;
