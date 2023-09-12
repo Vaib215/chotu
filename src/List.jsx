@@ -50,3 +50,5 @@ const List = () => {
     </div>
     </pre>
 }
+
+export default List;

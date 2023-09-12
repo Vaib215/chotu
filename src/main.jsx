@@ -18,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/unshort/:slug",
     element: <Unshort />
+  },
+  {
+    path: "/list",
+    element: <List />
   }
 ]);
 
