@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Redirect from "./Redirect";
 import Unshort from "./Unshort";
+import List from "./List";
 
 const router = createBrowserRouter([
   {
