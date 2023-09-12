@@ -4,6 +4,7 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Redirect from "./Redirect";
+import Unshort from "./Unshort";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/:slug",
-    element: <Redirect/>
+    element: <Redirect />
+  },
+  {
+    path: "/unshort/:slug",
+    element: <Unshort />
   }
 ]);
 
