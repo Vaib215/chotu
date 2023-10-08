@@ -20,8 +20,14 @@ function App() {
       ])
       .then((res) => {
         if (res.documents.length) {
-          alert("Slug already exists. Please change.");
-          slugRef.current.value = "";
+          databases.updateDocument("6483628b13491c210a5b",
+          "648365687a7bdb4a5fde", res.documents[0].$id, {
+            url: urlRef.current.value
+          }).then((res)=>{
+            shortRef.current.value = location.href + slugRef.current.value;
+            urlRef.current.value = "";
+            slugRef.current.value = "";
+          })
           return;
         }
       })
@@ -37,7 +43,6 @@ function App() {
             }
           )
           .then((res) => {
-            console.log(res);
             shortRef.current.value = location.href + slugRef.current.value;
             urlRef.current.value = "";
             slugRef.current.value = "";
