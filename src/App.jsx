@@ -59,9 +59,9 @@ function App() {
 
   return (
     <div className="App min-h-screen flex flex-col md:flex-row items-center text-center md:text-left p-6 max-w-6xl mx-auto">
-      <div className="text-3xl font-bold absolute top-4 mx-auto">
+      <div className="text-3xl flex flex-col items-end font-bold absolute top-4 mx-auto">
         <h1>chotu</h1>
-        <small className="text-sm">by Vaib</small>
+        <small className="text-sm font-normal">by Vaib</small>
       </div>
       <p className="py-6 text-6xl font-bold my-auto">
         Your own custom link shortner
